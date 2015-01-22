@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.nicky.myfit.PostFeedFragment"
+    >
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:id="@+id/noContentTextView"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="No posts to show"
+        android:layout_gravity="center"
+        android:paddingTop="112dp"
+        android:paddingLeft="56dp"
+        android:textSize="22sp"/>
+
+    <com.nicky.myfit.view.ObservableRecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+
+    <com.melnykov.fab.FloatingActionButton
+
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_action_cached"/>
+
+
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,87 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/contentFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/grey_300"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/md_red_a200"
+            android:layout_gravity="top">
+        </android.support.v7.widget.Toolbar>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="72dp"
+            android:layout_gravity="center|top"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navDrawerContainer"
+        android:layout_width="320dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/userTextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="156dp"
+            android:background="@color/teal_400"
+            android:gravity="bottom|left"
+            android:paddingTop="0dp"
+            android:paddingLeft="24dp"
+            android:paddingBottom="26dp"/>
+        <com.nicky.myfit.CircularView
+            android:id="@+id/letterCircularView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="16dp"/>
+        <ListView
+            android:paddingTop="156dp"
+            android:id="@+id/navList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/navSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Settings"/>
+            <Button
+                android:id="@+id/navLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Log In"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

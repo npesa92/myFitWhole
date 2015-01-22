@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nicky.myfit.DetailActivity">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top"
+                android:scaleType="centerCrop"/>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/toolbar_shadow"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+            <at.markushi.ui.RevealColorView
+                android:id="@+id/revealView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            />
+
+            <TextView
+                android:id="@+id/detailEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@color/grey_400"/>
+
+            <com.melnykov.fab.FloatingActionButton
+                fab:fab_colorNormal="@color/teal_a400"
+                android:id="@+id/addClothingItemsFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_add"
+                android:layout_marginBottom="24dp">
+            </com.melnykov.fab.FloatingActionButton>
+
+    <FrameLayout
+        android:id="@+id/clothingFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/clothingText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothing Items"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_clear"
+            android:drawablePadding="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"/>
+        <ImageButton
+            android:id="@+id/fadeClothingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_camera"
+            android:background="@android:color/transparent"
+            android:layout_gravity="top|right"
+            android:layout_margin="16dp"/>
+        <LinearLayout
+            android:id="@+id/outfitDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dp"
+            >
+            <com.nicky.myfit.RoundCornerView
+                android:id="@+id/roundClothView"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

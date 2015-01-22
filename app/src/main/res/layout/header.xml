@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerContainer"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.34"
+        android:background="@color/teal_a400"/>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Outfits"
+        android:paddingLeft="36dp"
+        android:paddingBottom="16dp"
+        android:layout_gravity="bottom"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/top_shadow"
+        android:layout_gravity="bottom"/>
+</FrameLayout>
